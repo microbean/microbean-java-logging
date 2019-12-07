@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+  <Match>
+    <Class name="org.microbean.java.logging.LogManager"/>
+    <Bug pattern="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS"/>
+  </Match>
+  <Match>
+    <Bug pattern="	NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"/>
+    <Class name="org.microbean.java.logging.LoggingConfigFileMonitor"/>
+    <Method name="isLoggingConfigFileEvent"/>
+  </Match>
+</FindBugsFilter>
